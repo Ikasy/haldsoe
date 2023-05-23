@@ -62,6 +62,10 @@ main{
     text-align: center;
     margin-top:25px;
 }
+.center{
+    margin-top: 25px;
+    text-align: center;
+}
 
 /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
 .video-container {
@@ -253,6 +257,114 @@ nav{
 .layout section div p {
     color: #F3F0EB;
 }
+
+/* ----------------- Aktiviteter ----------------- */
+/* Her er der igen gentagelser for de forskellige baggrundsbilleder,  */
+#skovlegepladsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/skovlegeplads_bornenes_hald.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ishuslegepladsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/ishus_legeplads.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dollerupbadebrobillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/dollerup_badebro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skytteholmenbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/skytteholmen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sobreddenbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/sobredden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#dollerupmollebillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/dollerup_molle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#haldladebillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/haldladen_museum.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rundvisningsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/rundvisning.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#planlagteruterbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/bestemte_stier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gemtestierbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/gemte_stier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tokolonner{
+    width: 90%;
+
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tokolonner a{
+    width: 45%;
+    height: 500px;
+    
+    border-radius:5px; 
+    margin: 50px 0px 50px 0px;
+}
+
+.tokolonner a section{
+    border-radius:5px;
+    height: 500px; 
+}
+
+
+.tokolonner section div { 
+    width: 95%;
+    height: 95%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.tokolonner section div h3 {
+    color:#F3F0EB;
+}
+.tokolonner section div p {
+    color: #F3F0EB;
+} 
 
 /* ----------------- Footer ----------------- */
 footer{
