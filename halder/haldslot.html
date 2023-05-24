@@ -52,6 +52,7 @@
         </header>
         <!-- ******************************* Main *************************************-->
         <main>
+            <script src="sketch.js"></script>
             <h1 class="indryk">Ruinen Hald Slot</h1>
 
             <div class="tekstogbillede">
@@ -66,12 +67,35 @@
                 <img src="../images/haldslotartikel.jpg" alt="Ruinen Hald Slot">
             </div>
 
-            <div class="imgslider">
+            <!-- Kode fra  https://codepen.io/abhishekdana/pen/zYYXbMY-->
+            <div id="slider-container" class="slider">
+                <div class="slide skubvenstre">
+                        <img src="../images/hald_slot_forfra_ slider.jpg" alt="Hald Slots Ruin fra forsiden hvor man går ind">
+                </div>
+                <div class="slide">
+                        <img src="../images/hald_slot_bagfra_ slider.jpg" alt="Hald Slots Ruin fra bagsiden">
+                </div>
+                <div class="slide">
+                        <img src="../images/hald_slot_køkken_slider.jpg" alt="Det gamle køkken fra Hald Slots Ruin">
+                </div>
+                <div class="slide">
+                        <img src="../images/hald-slot-ovn-slider.jpg" alt="Det gamle køkkens ovn fra Hald Slots Ruin">
+                </div>
+                <div class="slide skubhøjre">
+                        <img src="../images/hald_slot_information_tårn_slider.jpg" alt="Den nyeste renovering med information omkring Hald Sø og De Fem Halder på Hald Slots Ruinens top">
+                </div>
+                
+                <div onclick="prev()" class="control-prev-btn">
+                    <i><img class="sliderarrow" src="../images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="Gå til forrige billede"></i>
+                </div>
+                <div onclick="next()" class="control-next-btn">
+                    <i><img class="sliderarrow" src="../images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="Gå til næste billede"></i>
+                </div>
+            </div>    
 
-            </div>
 
 
-            <h2 class="indryk">Historie</h2>
+            <h2 class="indryk topskub">Historie</h2>
             <div class="tekstogbillede">
                 <p>
                     Hald ege området blev opkøbt af Nielsen Bugge i 1346. hvor efter han byggede borgen.
@@ -180,6 +204,10 @@
                 </div>
             </div>
         </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script  src="../script.js"></script>
+
     </body>
 
 </html>
