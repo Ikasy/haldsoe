@@ -170,19 +170,21 @@ nav{
 .dropdown-content{
     display: none;
     position: absolute;
+    width: 12.3%;
     
     box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.38);
     background-color: #F3F0EBCC;
     border-radius: 5px;
-    text-align: center
+    text-align: left
     
 }
 
 .dropdown-content a{
+    width: 90%;
     display: block;  /* gør sådan hvert link står for sig selv */
     border-bottom: #7B8C3D 2px solid;
-    padding: 5px 10px 5px 10px;
     margin: 0px 10px 0px 10px;
+    
 }
 
 .dropdown:hover .dropdown-content{
