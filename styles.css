@@ -61,6 +61,8 @@ main{
 .overskrift{
     text-align: center;
     margin-top:25px;
+    width: 50%;
+    margin: auto;
 }
 .center{
     margin-top: 25px;
@@ -382,6 +384,40 @@ nav{
     display: flex;
     align-items: center;
 }
+
+/* parkering */
+.control-prev-btn-parkering {
+	position: absolute;
+	top: 127.4%;
+	left: 0;
+
+	background-color: #7B8C3D;
+	height: 450px;
+	
+	width: 100px;
+    
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.control-next-btn-parkering {
+	position: absolute;
+	top: 127.4%;
+	right: 0;
+
+	background-color: #7B8C3D;
+	height: 450px;
+	
+	width: 100px;
+    
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 /* Lånt kode slut */
 
 
@@ -404,6 +440,7 @@ nav{
 ul{
     list-style-type: disc;
     list-style-position: inside;
+    text-align: left;
 
     width: 90%;
     margin: 10px auto 50px auto;
@@ -412,6 +449,9 @@ ul{
     font-family: "noto-sans", sans-serif;
     font-size: 18px;
     color: #252625;
+}
+.overskrift ul{
+    margin-bottom: 25px;
 }
 
 .billedeindryk{

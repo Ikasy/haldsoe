@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hald Sø | Spisesteder</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+        <!-- ******************************* Header *************************************-->
+        <header>
+            <nav>
+                <a id="logoboks" href="../index.html"> <img id="logo" src="../images/haldsoelogo.svg" alt="Hald Sø logo"> Hald Sø</a>
+                <div id="dropdown-container">
+                    <div class="dropdown">
+                        <a href="../defemhalder.html"> De Fem Halder <img class="dropdownarrow" src="../images/arrow_drop_down.svg" alt="drop down icon"></a>
+                            <div class="dropdown-content">
+                                <a href="../halder/gammelhald.html"> Gammel Hald </a>
+                                <a href="../halder/valdemarsskanse.html"> Valdemars Skanse </a>
+                                <a href="../halder/haldslot.html"> Ruinen Hald Slot </a>
+                                <a href="../halder/daasherregard.html"> Daas Herregård </a>
+                                <a href="../halder/haldhovedgard.html"> Hald Hovedgård </a>
+                            </div>
+                    </div>
+        
+                    <div class="dropdown">
+                        <a href="../aktiviteter.html"> Aktiviteter <img class="dropdownarrow" src="../images/arrow_drop_down.svg" alt="drop down icon"></a>
+                            <div class="dropdown-content">
+                                <a href="../aktiviteter.html#anchorlegeplads"> Legepladser </a>
+                                <a href="../aktiviteter.html#anchorbade"> Bade venlige lokationer </a>
+                                <a href="../aktiviteter.html#anchorfisk"> Fiskesteder </a>
+                                <a href="../aktiviteter.html#anchorinfo"> Informations aktiviteter </a>
+                                <a href="../aktiviteter.html#anchorgature"> Gåture </a>
+                            </div>
+                    </div>
+                
+                    <div class="dropdown">
+                        <a href="../praktiskeinformationer.html"> Praktisk information <img class="dropdownarrow" src="../images/arrow_drop_down.svg" alt="drop down icon"></a>
+                            <div class="dropdown-content">
+                                <a href="../praktisk/spisesteder.html"> Spisesteder </a>
+                                <a href="../praktisk/toiletter.html"> Toiletter </a>
+                                <a href="../praktisk/parkering.html"> Parkering </a>
+                                <a href="../praktisk/overnatning.html"> Overnatning </a>
+                                <a href="../praktisk/folderogkort.html"> Folder og kort </a>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="line"></div>
+        </header>
+        <!-- ******************************* Main *************************************-->
+        <main>
+            <div class="overskrift">
+                <h1>Parkering</h1>
+                <p>Skal man afsted, skal der selvfølgelig også være plads til bilen. Der er mange parkeringsmuligheder flere steder ved vejen, som der er skiltet til ellers findes der her et kort over stederne.<br><br> </p>
+                
+                <ul>
+                    <li>Parkering er gratis og der er ikke tidsbegrænsninger.<br><br></li>
+                    <li>Det er ikke muligt at køre eller parkere op til Hald Slot, man skal gå.<br><br></li>
+                    <li>Der er ingen markerede båse, men der skal stadig parkers ordenligt.<br><br></li>
+                </ul>
+            </div>
+
+            <img class="billedeindryk" src="../images/spisestederkort.jpg" alt="Kort over lokationerne for spisestederne">
+            
+            
+            <!-- Kode fra  https://codepen.io/abhishekdana/pen/zYYXbMY-->
+            <div id="slider-container" class="slider">
+                <div class="slide skubvenstre">
+                        <img src="../images/parkeringdollerupishus.jpg" alt="Parkering til Dollerup Ishus">
+                </div>
+                <div class="slide">
+                        <img src="../images/parkeringhaldhovedgaard.jpg" alt="Parkering til  Hald Hovedgård">
+                </div>
+                <div class="slide">
+                        <img src="../images/parkeringnaturskolen.jpg" alt="Parkering til Naturskolen">
+                </div>
+                <div class="slide">
+                        <img src="../images/parkeringnielsbugge.jpg" alt="Parkering til Niels Bugges Kro">
+                </div>
+                <div class="slide">
+                        <img src="../images/parkeringskovlegeplads.jpg" alt="Parkering til Skovlegepladsen">
+                </div>
+                
+                <div onclick="prev()" class="control-prev-btn-parkering">
+                    <i><img class="sliderarrow" src="../images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="Gå til forrige billede"></i>
+                </div>
+                <div onclick="next()" class="control-next-btn-parkering">
+                    <i><img class="sliderarrow" src="../images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg" alt="Gå til næste billede"></i>
+                </div>
+            </div> 
+        </main>
+
+        <!-- ******************************* Footer *************************************-->
+        <footer>
+            <div id="footercontent">
+                <div>
+                    <a class="footerheading" href="../defemhalder.html"> De Fem Halder </a>
+                        <div>
+                            <a href="../halder/gammelhald.html"> Gammel Hald </a>
+                            <a href="../halder/valdemarsskanse.html"> Valdemars Skanse </a>
+                            <a href="../halder/haldslot.html"> Ruinen Hald Slot </a>
+                            <a href="../halder/daasherregard.html"> Daas Herregård </a>
+                            <a href="../halder/haldhovedgard.html"> Hald Hovedgård </a>
+                        </div>
+                </div>
+            
+                <div>
+                    <a class="footerheading" href="../aktiviteter.html"> Aktiviteter </a>
+                        <div>
+                            <a href="../aktiviteter.html#anchorlegeplads"> Legepladser </a>
+                            <a href="../aktiviteter.html#anchorbade"> Bade venlige lokationer </a>
+                            <a href="../aktiviteter.html#anchorfisk"> Fiskesteder </a>
+                            <a href="../aktiviteter.html#anchorinfo"> Informations aktiviteter </a>
+                            <a href="../aktiviteter.html#anchorgature"> Gåture </a>
+                        </div>
+                </div>
+                    
+                <div>
+                    <a class="footerheading" href="../praktiskeinformationer.html"> Praktisk information </a>
+                        <div>
+                            <a href="../praktisk/spisesteder.html"> Spisesteder </a>
+                            <a href="../praktisk/toiletter.html"> Toiletter </a>
+                            <a href="../praktisk/parkering.html"> Parkering </a>
+                            <a href="../praktisk/overnatning.html"> Overnatning </a>
+                            <a href="../praktisk/folderogkort.html"> Folder og kort </a>
+                        </div>
+                </div>
+
+                <div>
+                    <a class="footerheading" href=" "> Kontakt </a>
+                        <div>
+                            <a href=".html">  Adresse: </a>
+                            <a href=".html"> Ravnsbjergvej 76, 8800 Viborg </a>
+                            <a href=".html"> E-mail: vibmus@viborg.dk </a>
+                            <a href=".html"> Tlf. : +45 87 87 38 38 </a>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script  src="../script.js"></script>
+    </body>
+
+</html>
