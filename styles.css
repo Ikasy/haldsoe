@@ -182,9 +182,9 @@ nav{
 .dropdown-content a{
     width: 90%;
     display: block;  /* gør sådan hvert link står for sig selv */
-    border-bottom: #7B8C3D 2px solid;
-    margin: 0px 10px 0px 10px;
-    
+    margin: 20px 10px 20px 10px;
+    line-height: 1;
+
 }
 
 .dropdown:hover .dropdown-content{
@@ -267,20 +267,33 @@ nav{
 }
 
 /* ----------------- De Fem Halder - Artikler ----------------- */
-
 .tekstogbillede {
     width: 90%;
     height: auto;
-    /* margin: auto; */
-    margin: 50px auto 50px auto;
 
+    margin: 50px auto 50px auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+
 }
-.tekstogbillede p{
-    width:70%;
+
+.tekstogbillede img{
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
 } 
+.reverse img{
+    margin-left:0px;
+    margin-right: 50px;
+}
+
+/* spisesteder */
+p a{
+    text-decoration: underline;
+    color: #252625;
+}
+
 
 
 /* Kode fra https://codepen.io/abhishekdana/pen/zYYXbMY */
@@ -640,17 +653,7 @@ ul{
     background-size: cover;
 }
 
-/* spisesteder */
-p a{
-    text-decoration: underline;
-    color: #252625;
-}
-.tekstogbillede section p{
-    width: 90%;
-}
-.skub{
-    margin-left: 100px;
-}
+
 
 /* ----------------- Footer ----------------- */
 footer{

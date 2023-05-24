@@ -1,0 +1,530 @@
+@import url("https://use.typekit.net/nku1dkm.css");
+
+
+                                            /* 
+                                            Noto Sans Regular
+                                            font-family: "noto-sans", sans-serif;
+                                            font-weight: 400;
+                                            font-style: normal; 
+                                            */
+
+                                            /* 
+                                            Noto Sans Bold
+                                            font-family: "noto-sans", sans-serif;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            */
+
+                                            /* 
+                                            Noto Sans Display Black
+                                            font-family: "noto-sans-display", sans-serif;
+                                            font-weight: 900;
+                                            font-style: normal;
+                                            */
+
+/* Generelle styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #F3F0EB;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: "noto-sans-display", sans-serif;
+    font-size: 36px;
+    color: #7B8C3D;
+}
+h2{
+    font-family: "noto-sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #7B8C3D;
+}
+h3{
+    font-family: "noto-sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #7B8C3D;
+}
+p{
+    font-family: "noto-sans", sans-serif;
+    font-size: 18px;
+    color: #252625;
+}
+main{
+    padding-top: 80px;
+}
+.overskrift{
+    text-align: center;
+    margin-top:25px;
+    width: 50%;
+    margin: auto;
+}
+.center{
+    margin-top: 25px;
+    text-align: center;
+}
+.indryk{
+    width: 90%;
+    margin: auto;
+}
+
+/* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* ----------------- Header ----------------- */
+
+#logoboks{
+    display: flex;
+    align-items: center;
+
+    font-family: "noto-sans-display", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+#logo{
+    width: 50px;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(243, 240, 235, 0.8) 64.58%, rgba(243, 240, 235, 0) 100%);
+
+    position: fixed;
+    z-index: 1;
+    
+}
+header a{
+    text-decoration: none;
+    color: #7B8C3D;
+}
+
+nav{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "noto-sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.line{
+    width: 89%;
+    border-bottom: #7B8C3D 4px solid;
+
+    position: absolute;
+    left: 6%;
+    bottom: 33%;
+}
+
+/* ----------------- Dropdown ----------------- */
+
+.dropdownarrow{
+    width: 15px;
+}
+
+/* Giver pladsen mellem hvert link */
+#dropdown-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown{
+    display: inline-block; /*sørger for at dropdownen bliver vist nedenfor det rigtige menu punkt*/
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 12.3%;
+    
+    box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.38);
+    background-color: #F3F0EBCC;
+    border-radius: 5px;
+    text-align: left
+    
+}
+
+.dropdown-content a{
+    width: 90%;
+    display: block;  /* gør sådan hvert link står for sig selv */
+    border-bottom: #7B8C3D 2px solid;
+    margin: 0px 10px 0px 10px;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    z-index: 2;
+}
+
+.dropdown-content a:hover{
+    filter: brightness(1.25);
+}
+
+
+/* ----------------- De Fem Halder ----------------- */
+/* Her er gentagelsen for de forskellige baggrundsbilleder,  */
+#gammelhaldbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/gammelhald.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#valdemarsskansebillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/valdemarsskanse.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#haldslotbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/haldslot.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#daasherregardbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/daasherregard.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#haldhovedgardbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/haldhovedgard.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout {
+    width: 90%;
+    margin: auto;
+}
+
+.layout section{
+    border-radius:5px; 
+    width: 100%;
+    height:550px;
+    margin: 50px 0px 50px 0px;
+    /* transition: 0.5s; */
+}
+/* .layout section:hover{
+    transform:scale(1.05);
+    filter: brightness(1.2);
+    
+} */
+
+.layout section div { 
+    width: 95%;
+    height: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.layout section div h2 {
+    color:#F3F0EB;
+}
+.layout section div p {
+    color: #F3F0EB;
+}
+
+/* ----------------- De Fem Halder - Artikler ----------------- */
+
+.tekstogbillede {
+    width: 90%;
+    height: auto;
+    /* margin: auto; */
+    margin: 50px auto 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tekstogbillede p{
+    width:70%;
+} 
+#sliderwrap{
+    width: 100%;
+    height: 450px;
+    background-color: #7B8C3D;
+    padding-top: 75px;
+}
+.container{
+    width: 100%;
+    background-color: #ffaf24;
+    
+}
+/* .ads_sponsors div img{
+	width:400px;
+	height:300px;
+    padding: 100px;
+} */
+/* Kode fra https://codepen.io/abhishekdana/pen/zYYXbMY */
+
+/* Lånt kode slut */
+
+
+
+.topskub{
+    padding-top: 25px;
+    margin-top:  25px;
+}
+.skubvenstre{
+    margin-left: 100px;
+}
+.skubhøjre{
+    margin-right: 100px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
+
+    width: 90%;
+    margin: 10px auto 50px auto;
+
+
+    font-family: "noto-sans", sans-serif;
+    font-size: 18px;
+    color: #252625;
+}
+.overskrift ul{
+    margin-bottom: 25px;
+}
+
+.billedeindryk{
+    width: 90%;
+    
+    display: flex;
+    margin: 25px auto 50px auto;
+
+}
+
+
+/* ----------------- Aktiviteter ----------------- */
+/* Her er der igen gentagelser for de forskellige baggrundsbilleder,  */
+#skovlegepladsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/skovlegeplads_bornenes_hald.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ishuslegepladsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/ishus_legeplads.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dollerupbadebrobillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/dollerup_badebro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skytteholmenbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/skytteholmen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sobreddenbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/sobredden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#dollerupmollebillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/dollerup_molle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#haldladebillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/haldladen_museum.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rundvisningsbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/rundvisning.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#planlagteruterbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/bestemte_stier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gemtestierbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/gemte_stier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tokolonner{
+    width: 90%;
+
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tokolonner a{
+    width: 45%;
+    height: 500px;
+    
+    border-radius:5px; 
+    margin: 50px 0px 50px 0px;
+}
+
+.tokolonner a section{
+    border-radius:5px;
+    height: 500px; 
+}
+
+
+.tokolonner section div { 
+    width: 95%;
+    height: 95%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.tokolonner section div h3 {
+    color:#F3F0EB;
+}
+.tokolonner section div p {
+    color: #F3F0EB;
+} 
+
+/* ----------------- Praktisk information ----------------- */
+/* Her er der igen gentagelser for de forskellige baggrundsbilleder,  */
+#spisestederbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/spisesteder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#toiletterbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/toiletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#parkeringbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/parkering.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#overnatningbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/overnatning.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#folderkortbillede{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/folderogkort.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* spisesteder */
+p a{
+    text-decoration: underline;
+    color: #252625;
+}
+.tekstogbillede section p{
+    width: 90%;
+}
+.skub{
+    margin-left: 100px;
+}
+
+/* ----------------- Footer ----------------- */
+footer{
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+
+    background-color: #DEDBD5;
+}
+
+#footercontent{
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    font-family: "noto-sans", sans-serif;
+    font-size: 18px;
+    color: #7B8C3D;
+    padding: 5px 0px 5px 0px;
+}
+.footerheading{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer div div div{
+    display: flex;
+    flex-direction: column;
+}
