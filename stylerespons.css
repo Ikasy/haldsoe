@@ -60,8 +60,8 @@
     }
 
     .tekstogbillede img{
-        width: 400px;
-        height: 400px;
+        width: 30%;
+        height: auto;
         margin-left: 50px;
     } 
     .reverse img{
@@ -143,6 +143,10 @@
         width:90%;
         height: auto;
         margin: 20px auto;
+    }
+
+    .mobilhide{
+        display: none;
     }
 /* footer */
 #footercontent{
