@@ -1,5 +1,7 @@
 /* computer */
 @media screen and (min-width:1280px){
+    
+    /* header */
     .pcheader{
         display: flex;
     }
@@ -20,26 +22,40 @@
 
     /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
 
-.video-container video {
-    /* Make video to at least 100% wide and tall */
-    min-width: 100%; 
-    min-height: 100%; 
+    .video-container video {
+        /* Make video to at least 100% wide and tall */
+        min-width: 100%; 
+        min-height: 100%; 
 
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
+        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+        width: auto;
+        height: auto;
 
-    /* Center the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+        /* Center the video */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 
+        
+    }
 
+    /* footer */
+    #footercontent{
+        width: 90%;
+        margin: auto;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footermobil{
+        display: none;
+    }
 }
 /* mobil */
 @media screen and (max-width:1279px){
+    /* header */
     .pcheader{
         display: none;
     }
@@ -66,5 +82,21 @@
     /* Make video to at least 100% wide and tall */
     min-width: 100%; 
     min-height: 100%; 
+}
+
+/* footer */
+#footercontent{
+    display: none;
+}
+
+#footermobil{
+    display: block;
+    width:90%;
+    margin: auto;
+}
+
+#footermobil div{
+    display: flex;
+    flex-direction: column;
 }
 }

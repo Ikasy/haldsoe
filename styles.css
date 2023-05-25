@@ -647,13 +647,7 @@ footer{
     background-color: #DEDBD5;
 }
 
-#footercontent{
-    width: 90%;
-    margin: auto;
-    
-    display: flex;
-    justify-content: space-between;
-}
+
 footer a{
     font-family: "noto-sans", sans-serif;
     font-size: 18px;
@@ -674,4 +668,3 @@ footer div div div{
 .burgermenu{
     width: 30px;
 }
-
