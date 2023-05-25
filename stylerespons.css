@@ -35,10 +35,40 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-
-        
+        transform: translate(-50%,-50%);    
     }
+
+    /* artikler */
+    .overskrift{
+        width: 50%;
+    }
+    .layout section{
+        height:550px;
+    }
+    .layout section div{
+        height: 500px;
+    }
+
+    .tokolonner a{
+        width: 45%;
+
+        margin: 50px 0px;
+    }
+    
+    .tokolonner a section{
+        height: 500px; 
+    }
+
+    .tekstogbillede img{
+        width: 400px;
+        height: 400px;
+        margin-left: 50px;
+    } 
+    .reverse img{
+        margin-left:0px;
+        margin-right: 50px;
+    }
+
 
     /* footer */
     #footercontent{
@@ -84,6 +114,36 @@
     min-height: 100%; 
 }
 
+/* artikler */
+    .overskrift{
+        width: 90%;
+    }
+    .layout section{
+        height:300px;
+    }
+    .layout section div{
+        height: 280px;
+    }
+
+    .tokolonner{
+        flex-direction: column;
+    }
+    .tokolonner a{
+        margin: 20px 0px;
+    }
+    .tokolonner a section{
+        height: 300px; 
+    }
+
+    .tekstogbillede{
+        flex-direction: column;
+
+    }
+    .tekstogbillede img{
+        width:90%;
+        height: auto;
+        margin: 20px auto;
+    }
 /* footer */
 #footercontent{
     display: none;

@@ -61,7 +61,6 @@ main{
 .overskrift{
     text-align: center;
     margin-top:25px;
-    width: 50%;
     margin: auto;
 }
 .center{
@@ -222,7 +221,6 @@ nav{
 .layout section{
     border-radius:5px; 
     width: 100%;
-    height:550px;
     margin: 50px 0px 50px 0px;
     /* transition: 0.5s; */
 }
@@ -234,7 +232,7 @@ nav{
 
 .layout section div { 
     width: 95%;
-    height: 500px;
+    
     margin: auto;
 
     display: flex;
@@ -262,15 +260,7 @@ nav{
 
 }
 
-.tekstogbillede img{
-    width: 400px;
-    height: 400px;
-    margin-left: 50px;
-} 
-.reverse img{
-    margin-left:0px;
-    margin-right: 50px;
-}
+
 
 /* spisesteder */
 p a{
@@ -280,178 +270,41 @@ p a{
 
 
 
-/* Kode fra https://codepen.io/abhishekdana/pen/zYYXbMY */
-.slider {
+/* Slider*/
+.slidercontainer {
     width: 100%;
     height: 450px;
 
     background-color: #7B8C3D;
 
-	display: flex;
-    align-items: center;
-	overflow-y: hidden;
-	scroll-behavior: smooth;
+	
 }
-.slider::-webkit-scrollbar {
-	height: 5px;
-	width: 150px;
-	display: none;
+.slider{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.slide img {
+.slide {
 	height: 300px;
 	width: 400px;
-	margin: 0 25px;
 	object-fit: cover;
 	border-radius: 5px;
 	transition: .25s ease-in-out;
-}
-.slider img:hover {
+}.slide:hover {
 	transform: scale(1.05);
-	
 }
 
 .sliderarrow{
-    width: 25%;
+    width: 1%;
+    transition: .25s ease-in-out;
+}.sliderarrow:hover {
+	transform: scale(1.2);
 }
-
-/* Disse bliver genbrugt fordi pilene skal følge med når siden bliver længere */
-/* Halder */
-.control-prev-btn {
-	position: absolute;
-	top: 64.8%;
-	left: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-.control-next-btn {
-	position: absolute;
-	top: 64.8%;
-	right: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-/* spisesteder */
-.control-prev-btn-spisesteder {
-	position: absolute;
-	top: 110.7%;
-	left: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-.control-next-btn-spisesteder {
-	position: absolute;
-	top: 110.7%;
-	right: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-/* parkering */
-.control-prev-btn-parkering {
-	position: absolute;
-	top: 127.4%;
-	left: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-.control-next-btn-parkering {
-	position: absolute;
-	top: 127.4%;
-	right: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-/* Legeplads */
-.control-prev-btn-legeplads {
-	position: absolute;
-	top: 139.6%;
-	left: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-.control-next-btn-legeplads {
-	position: absolute;
-	top: 139.6%;
-	right: 0;
-
-	background-color: #7B8C3D;
-	height: 450px;
-	
-	width: 100px;
-    
-	text-align: center;
-	user-select: none;
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-/* Lånt kode slut */
 
 
 
@@ -572,19 +425,9 @@ ul{
     justify-content: space-between;
 }
 
-.tokolonner a{
-    width: 45%;
-    height: 500px;
-    
-    border-radius:5px; 
-    margin: 50px 0px 50px 0px;
-}
-
 .tokolonner a section{
-    border-radius:5px;
-    height: 500px; 
+    border-radius: 5px;
 }
-
 
 .tokolonner section div { 
     width: 95%;
@@ -646,7 +489,6 @@ footer{
 
     background-color: #DEDBD5;
 }
-
 
 footer a{
     font-family: "noto-sans", sans-serif;
