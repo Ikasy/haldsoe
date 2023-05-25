@@ -1,0 +1,70 @@
+/* computer */
+@media screen and (min-width:1280px){
+    .pcheader{
+        display: flex;
+    }
+    .mobilheader{
+        display: none;
+    }
+
+    .videocomputer{
+        display:block;
+    }
+    .videomobil{
+        display:none;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
+
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+}
+/* mobil */
+@media screen and (max-width:1279px){
+    .pcheader{
+        display: none;
+    }
+    .mobilheader{
+        display: flex;
+        width: 90%;
+        margin: 10px auto;
+        justify-content: space-between;
+    }
+
+    .videocomputer{
+        display:none;
+    }
+    .videomobil{
+        display:block;
+    }
+
+    header{
+        height: 60px;
+    }
+        /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
+
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+}
+}
