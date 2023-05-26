@@ -113,6 +113,7 @@ img{
     font-family: "noto-sans-display", sans-serif;
     font-weight: 900;
     font-size: 24px;
+    
 }
 .logo{
     width: 50px;
@@ -346,7 +347,10 @@ p a{
 .reverse{
     flex-direction: row-reverse;
 }
-
+.reverse img{
+    margin-left:0;
+    margin-right: 50px;
+}
 ul{
     list-style-type: disc;
     list-style-position: inside;
@@ -528,12 +532,19 @@ footer a{
 footer p{
     color: #7B8C3D;
 }
-
+#footercontent{
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
 .footerheading{
     font-size: 20px;
     font-weight: 700;
     text-decoration: underline;
 }
+
 
 footer div div div{
     display: flex;

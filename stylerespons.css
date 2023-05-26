@@ -10,6 +10,10 @@
         display: none;
     }
 
+    #footermobil{
+        display: none;
+    }
+
 }
 /* computer */
 @media screen and (max-width:1129px){
@@ -37,19 +41,7 @@
     
 
     
-    .reverse img{
-        margin-left:0;
-        margin-right: 50px;
-    }
-
-    /* footer */
-    #footercontent{
-        width: 90%;
-        margin: auto;
-        
-        display: flex;
-        justify-content: space-between;
-    }
+    
 
     #footermobil{
         display: none;
@@ -74,6 +66,10 @@
 
     header{
         height: 60px;
+    }
+    .logo{
+        width: 50px;
+        height: auto;
     }
 
 
