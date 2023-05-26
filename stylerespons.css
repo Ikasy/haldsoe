@@ -1,5 +1,18 @@
+
+@media screen and (min-width:1130px) {
+    #dropdown-container{
+        width: 50%
+    }
+    .pcheader{
+        display: flex;
+    }
+    .mobilheader{
+        display: none;
+    }
+
+}
 /* computer */
-@media screen and (min-width:1280px){
+@media screen and (max-width:1129px){
     
     /* header */
     .pcheader{
@@ -9,83 +22,26 @@
         display: none;
     }
 
-    .videocomputer{
-        display:block;
-    }
-    .videomobil{
-        display:none;
-    }
-
-    header{
-        height: 80px;
-    }
-
-    /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
-
-    .video-container video {
-        /* Make video to at least 100% wide and tall */
-        min-width: 100%; 
-        min-height: 100%; 
-
-        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-        width: auto;
-        height: auto;
-
-        /* Center the video */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);    
+    #dropdown-container{
+        width: 75%
     }
 
     /* artikler */
     .overskrift{
-        width: 50%;
-    }
-    .layout section{
-        height:550px;
-    }
-    .layout section div{
-        height: 500px;
+        width: 55%;
     }
 
-    .tokolonner a{
-        width: 45%;
-
-        margin: 50px 0px;
+    .tokolonner a section{
+        height:400px;
     }
     
-    .tokolonner a section{
-        height: 500px; 
-    }
 
-    .tekstogbillede img{
-        width: 30%;
-        height: auto;
-        margin-left: 50px;
-    } 
+    
     .reverse img{
-        margin-left:0px;
+        margin-left:0;
         margin-right: 50px;
     }
 
-
-    /* slider */
-    .slide {
-        height: auto;
-        width: 25%;
-        border-radius: 5px;
-        transition: .25s ease-in-out;
-    }.slide:hover {
-        transform: scale(1.05);
-    }
-    
-    .sliderarrow{
-        width: 1%;
-        transition: .25s ease-in-out;
-    }.sliderarrow:hover {
-        transform: scale(1.2);
-    }
     /* footer */
     #footercontent{
         width: 90%;
@@ -99,8 +55,11 @@
         display: none;
     }
 }
+
+
+
 /* mobil */
-@media screen and (max-width:1279px){
+@media screen and (max-width:768px){
     /* header */
     .pcheader{
         display: none;
@@ -112,23 +71,11 @@
         justify-content: space-between;
     }
 
-    .videocomputer{
-        display:none;
-    }
-    .videomobil{
-        display:block;
-    }
 
     header{
         height: 60px;
     }
-        /* Denne video del er lånt fra: https://codepen.io/shshaw/pen/OVGWLG  */
 
-.video-container video {
-    /* Make video to at least 100% wide and tall */
-    min-width: 100%; 
-    min-height: 100%; 
-}
 
 /* artikler */
     .overskrift{
@@ -145,7 +92,8 @@
         flex-direction: column;
     }
     .tokolonner a{
-        margin: 20px 0px;
+        width: 100%;
+        margin: 20px 0;
     }
     .tokolonner a section{
         height: 300px; 
@@ -159,6 +107,7 @@
         width:100%;
         height: auto;
         margin-top: 20px;
+        margin-left: 0;
     }
 
 
