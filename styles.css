@@ -562,6 +562,9 @@ footer div div div{
     #footermobil{
         display: none;
     }
+    .overskrift{
+        width: 55%;
+    }
     /* Effekter */
     .layout section:hover{
         transform:scale(1.03);
